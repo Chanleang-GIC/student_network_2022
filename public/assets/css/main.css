@@ -30,7 +30,7 @@
   width: auto;
   height: 30px;
   grid-area: item1;
-  background-color: #dce0dd;
+  background-color: #e4e4e4;
   /*border: 1px solid #666;*/
 }
 .grid-item2 {
@@ -40,7 +40,7 @@
   width: auto;
   height: 30px;
   grid-area: item2;
-  background-color: #dce0dd;
+  background-color: #e4e4e4;
 }
 .grid-item3 {
   display: flex;
@@ -49,7 +49,7 @@
   width: auto;
   height: 30px;
   grid-area: item3;
-  background-color: #dce0dd;
+  background-color: #e4e4e4;
 }
 .grid-item4 {
   display: flex;
@@ -58,7 +58,7 @@
   width: auto;
   height: 30px;
   grid-area: item4;
-  background-color: #dce0dd;
+  background-color: #e4e4e4;
 }
 .grid-item5 {
   display: flex;
@@ -67,7 +67,7 @@
   width: auto;
   height: 30px;
   grid-area: item5;
-  background-color: #dce0dd;
+  background-color: #e4e4e4;
 
 }
 .grid-item6 {
