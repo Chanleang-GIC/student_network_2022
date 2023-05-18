@@ -5,7 +5,7 @@
   grid-row: auto;
   grid-gap: 5px;
   grid-template-areas: 
-  "item1 item2 item3 item4 item5"
+  "gridbar gridbar gridbar gridbar gridbar"
   "item6 item6 item6 item6 item6"
   "grid1 grid1 grid1 grid1 grid1"
   "grid3 grid3 grid3 grid3 grid3"
@@ -31,7 +31,7 @@
   height: 30px;
   grid-area: item1;
   background-color: #dce0dd;
-  border: 1px solid #666;
+  /*border: 1px solid #666;*/
 }
 .grid-item2 {
   display: flex;
@@ -41,7 +41,6 @@
   height: 30px;
   grid-area: item2;
   background-color: #dce0dd;
-  border: 1px solid #666;
 }
 .grid-item3 {
   display: flex;
@@ -51,7 +50,6 @@
   height: 30px;
   grid-area: item3;
   background-color: #dce0dd;
-  border: 1px solid #666;
 }
 .grid-item4 {
   display: flex;
@@ -61,7 +59,6 @@
   height: 30px;
   grid-area: item4;
   background-color: #dce0dd;
-  border: 1px solid #666;
 }
 .grid-item5 {
   display: flex;
@@ -71,7 +68,7 @@
   height: 30px;
   grid-area: item5;
   background-color: #dce0dd;
-  border: 1px solid #666;
+
 }
 .grid-item6 {
   display: flex;
@@ -87,14 +84,13 @@
 .grid-item7 {
   display: flex;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
   width: auto;
   height: auto;
   background-color: #bbbbbb;
   border: 1px solid #666;
   grid-area: item7;
   border-radius: 1em;
-  justify-content: center;
 }
 .grid-item8 {
   display: flex;
@@ -127,37 +123,30 @@
   border-radius: 1em;
   justify-content: center;
 }
-.grid-item11 {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  width: auto;
-  height: auto;
-  background-color: #bbbbbb;
+.grid-containerbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 1fr 1fr;;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  grid-template-areas: 
+  "item1 item2 item3 item4 item5"
+  ;
+  grid-area: gridbar;
+}
+.grid-containerbar {
+  background-color: #e4e4e4;
   border: 1px solid #666;
-  grid-area: item7;
-  border-radius: 1em;
-  justify-content: center;
+  
 }
-.grid-item12 {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  width: auto;
-  height: 50px;
-  grid-area: item8;
-  border-radius: 1em;
-}
-
 
 .grid-container1 {
   grid-template-columns: 1fr;
   grid-row: 1fr 2fr;
   grid-gap: 5px;
   grid-template-areas: 
-  "item12"
-  "item11"
-  "item11"
+  "item8"
+  "item7"
+  "item7"
   ;
   grid-area: grid1;
   border-radius: 1em;
@@ -171,9 +160,9 @@
   grid-row: 1fr 2fr;
   grid-gap: 5px;
   grid-template-areas: 
-  "item12"
-  "item11"
-  "item11"
+  "item8"
+  "item7"
+  "item7"
   ;
   grid-area: grid2;
   border-radius: 1em;
@@ -187,9 +176,9 @@
   grid-row: 1fr 2fr;
   grid-gap: 5px;
   grid-template-areas: 
-  "item12"
-  "item11"
-  "item11"
+  "item8"
+  "item7"
+  "item7"
   ;
   grid-area: grid3;
   border-radius: 1em;
@@ -203,9 +192,9 @@
   grid-row: 1fr 2fr;
   grid-gap: 5px;
   grid-template-areas: 
-  "item12"
-  "item11"
-  "item11"
+  "item8"
+  "item7"
+  "item7"
   ;
   grid-area: grid4;
   border-radius: 1em;
