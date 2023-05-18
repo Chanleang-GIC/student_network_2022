@@ -87,14 +87,13 @@
 .grid-item7 {
   display: flex;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
   width: auto;
   height: auto;
   background-color: #bbbbbb;
   border: 1px solid #666;
   grid-area: item7;
   border-radius: 1em;
-  justify-content: center;
 }
 .grid-item8 {
   display: flex;
