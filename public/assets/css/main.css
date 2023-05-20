@@ -88,7 +88,6 @@
   width: auto;
   height: auto;
   background-color: #bbbbbb;
-  border: 1px solid #666;
   grid-area: item7;
   border-radius: 1em;
 }
@@ -118,10 +117,19 @@
   width: auto;
   height: auto;
   background-color: #bbbbbb;
-  border: 1px solid #666;
   grid-area: item8;
   border-radius: 1em;
   justify-content: center;
+}
+.grid-item11 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  grid-template-areas: 
+  "itemfoot1 itemfoot2 itemfoot3"
+  ;
+  grid-area: gridbar;
 }
 .grid-containerbar {
   display: grid;
@@ -133,6 +141,42 @@
   ;
   grid-area: gridbar;
 }
+.grid-itemfoot1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 20px;
+  background-color: #f4fff7;
+  border: 1px solid #c7c3c3;
+  grid-area: itemfoot1;
+  border-radius: 1em;
+  justify-content: center;
+}
+.grid-itemfoot2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 20px;
+  background-color: #f4fff7;
+  border: 1px solid #c7c3c3;
+  grid-area: itemfoot2;
+  border-radius: 1em;
+  justify-content: center;
+}
+.grid-itemfoot3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 20px;
+  background-color: #f4fff7;
+  border: 1px solid #c7c3c3;
+  grid-area: itemfoot3;
+  border-radius: 1em;
+  justify-content: center;
+}
 .grid-containerbar {
   background-color: #e4e4e4;
   border: 1px solid #666;
@@ -141,51 +185,51 @@
 
 .grid-container1 {
   grid-template-columns: 1fr;
-  grid-row: 1fr 2fr;
+  grid-row: 1fr 2fr 1fr;
   grid-gap: 5px;
   grid-template-areas: 
   "item8"
   "item7"
   "item7"
+  "itemfoot1"
   ;
   grid-area: grid1;
   border-radius: 1em;
 }
 .grid-container1 {
   background-color: #e4e4e4;
-  border: 1px solid #666;
 }
 .grid-container2 {
   grid-template-columns: 1fr;
-  grid-row: 1fr 2fr;
+  grid-row: 1fr 2fr 1fr;
   grid-gap: 5px;
   grid-template-areas: 
   "item8"
   "item7"
   "item7"
+  "gridbar"
   ;
   grid-area: grid2;
   border-radius: 1em;
 }
 .grid-container2 {
   background-color: #e4e4e4;
-  border: 1px solid #666;
 }
 .grid-container3 {
   grid-template-columns: 1fr;
-  grid-row: 1fr 2fr;
+  grid-row: 1fr 2fr 1fr;
   grid-gap: 5px;
   grid-template-areas: 
   "item8"
   "item7"
   "item7"
+  "gridbar"
   ;
   grid-area: grid3;
   border-radius: 1em;
 }
 .grid-container3 {
   background-color: #e4e4e4;
-  border: 1px solid #666;
 }
 .grid-container4 {
   grid-template-columns: 1fr;
@@ -201,7 +245,6 @@
 }
 .grid-container4 {
   background-color: #e4e4e4;
-  border: 1px solid #666;
 }
 #profile1{
   border-radius: 1em;
