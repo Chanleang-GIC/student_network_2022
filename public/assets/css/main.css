@@ -54,7 +54,7 @@
 .grid-item4 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   width: auto;
   height: 30px;
   grid-area: item4;
@@ -67,8 +67,7 @@
   width: auto;
   height: 30px;
   grid-area: item5;
-  background-color: #e4e4e4;
-
+  border-radius: 1em;
 }
 .grid-item6 {
   display: flex;
@@ -129,7 +128,7 @@
   grid-template-areas: 
   "itemfoot1 itemfoot2 itemfoot3"
   ;
-  grid-area: gridbar;
+  grid-area: gridbar1;
 }
 .grid-containerbar {
   display: grid;
@@ -191,7 +190,7 @@
   "item8"
   "item7"
   "item7"
-  "itemfoot1"
+  "gridbar1"
   ;
   grid-area: grid1;
   border-radius: 1em;
@@ -207,7 +206,7 @@
   "item8"
   "item7"
   "item7"
-  "gridbar"
+  "gridbar1"
   ;
   grid-area: grid2;
   border-radius: 1em;
@@ -223,7 +222,7 @@
   "item8"
   "item7"
   "item7"
-  "gridbar"
+  "gridbar1"
   ;
   grid-area: grid3;
   border-radius: 1em;
@@ -252,4 +251,10 @@
 #minute{
   font-size: 11px;
   color: #666363;
+}
+#post{
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  color: #000000;
+  font-weight: 900;
 }
