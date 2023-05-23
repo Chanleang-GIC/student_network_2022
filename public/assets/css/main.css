@@ -70,14 +70,59 @@
   border-radius: 1em;
 }
 .grid-item6 {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "item6-1 item6-2 item6-3 item6-4"
+  ;
+  width: auto;
+  height: auto;
+  background-color: #f4fff7;
+  border: 1px solid #666;
+  grid-area: item6;
+  border-radius: 50em;
+  align-items: center ;
+}
+.grid-item6-1 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
   height: 40px;
   background-color: #f4fff7;
-  border: 1px solid #666;
-  grid-area: item6;
+  grid-area: item6-1;
+  border-radius: 50em;
+}
+.textarea {
+  display:flex;
+  border: 1px solid transparent;
+  background-color: #f4fff7;
+  grid-area: item6-2;
+  outline:none;
+  resize:none;
+}
+::placeholder {
+  text-align: center; 
+}
+.grid-item6-3 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: auto;
+  height: 40px;
+  background-color: #f4fff7;
+  grid-area: item6-3;
+  border-radius: 50em;
+}
+.grid-item6-4 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: auto;
+  height: 40px;
+  background-color: #f4fff7;
+  grid-area: item6-4;
   border-radius: 50em;
 }
 .grid-item7 {
@@ -89,6 +134,12 @@
   background-color: #bbbbbb;
   grid-area: item7;
   border-radius: 1em;
+}
+.grid-item7:hover{
+  background-color: #bbbbbb;
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: all 0.2s ease;
 }
 .grid-item8 {
   display: flex;
@@ -119,6 +170,12 @@
   grid-area: item8;
   border-radius: 1em;
   justify-content: center;
+}
+.grid-item10:hover{
+  background-color: #bbbbbb;
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: all 0.2s ease;
 }
 .grid-item11 {
   display: grid;
@@ -151,6 +208,24 @@
   grid-area: itemfoot1;
   border-radius: 1em;
   justify-content: center;
+}
+.grid-itemfoot1:hover{
+  background-color: aqua;
+  cursor: pointer;
+  transform: scale(1.10);
+  transition: all 0.2s ease;
+}
+.grid-itemfoot2:hover{
+  background-color: aqua;
+  cursor: pointer;
+  transform: scale(1.10);
+  transition: all 0.2s ease;
+}
+.grid-itemfoot3:hover{
+  background-color: aqua;
+  cursor: pointer;
+  transform: scale(1.10);
+  transition: all 0.2s ease;
 }
 .grid-itemfoot2 {
   display: flex;
