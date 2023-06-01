@@ -1,0 +1,158 @@
+.btn1{
+    color: white;
+    background-color: #1560bd;
+    padding:10px;
+    border: none;
+    border-radius:0.3em
+}
+.btn2{
+    color: rgb(54, 54, 54);
+    background-color: white;
+    padding:10px;
+    border: 1px solid rgb(54, 54, 54);
+    border-radius:0.3em
+}
+.btn3{
+    color: rgb(54, 54, 54);
+    background-color: white;
+    padding:10px;
+    border: 1px dashed rgb(54, 54, 54);
+    border-radius:0.3em
+}
+#btn4{
+    color: rgb(54, 54, 54);
+    border: none;
+    background-color: white;
+}
+#btn5{
+    color: blue;
+    border: none;
+    background-color: white;
+}
+.container1{
+    display:flex;
+    flex-direction: column;
+
+}
+#btn6{
+    background-color: #1560bd;
+    padding:10px;
+    height: 40px;
+    width: 40px;
+    border-radius:3em;
+    border:none;
+}
+#btn7{
+    text-align: center;
+    vertical-align: center;
+    background-color: #1560bd;
+    padding:10px;
+    height: 40px;
+    width: 40px;
+    border-radius:3em;
+    color: white;
+    border: none;
+}
+.container2{
+    display:flex;
+    gap:6px;
+}
+.container3{
+    border:1px solid #545454;
+    display:flex;
+    flex-direction: column;
+    gap:6px;
+    padding: 20px;
+}
+#btn8{ 
+    background-color: #1560bd;
+    padding:10px;
+    height: 40px;
+    width: auto;
+    border-radius:3em;
+    color: white;
+    border:none;
+}
+#btn9{
+    background-color: #ffffff;
+    padding:10px;
+    height: 40px;
+    width: 40px;
+    border-radius:3em;
+    border: 1px solid #545454;
+}
+#btn10{ 
+    background-color: #faffff;
+    padding:10px;
+    height: 40px;
+    width: auto;
+    border-radius:3em;
+    color: rgb(19, 18, 18);
+    border: 1px solid #545454;
+}
+#btn11{
+    background-color: #ffffff;
+    padding:10px;
+    height: 40px;
+    width: 40px;
+    border-radius:0.8em;
+    border: 1px solid #545454;
+}
+#btn12{ 
+    background-color: #faffff;
+    padding:10px;
+    height: 40px;
+    width: auto;
+    border-radius:3em;
+    color: rgb(19, 18, 18);
+    border: 1px dashed #545454;
+}
+#btn13{
+    background-color: #ffffff;
+    padding:10px;
+    height: 40px;
+    width: 40px;
+    border-radius:3em;
+    border: 1px dashed #545454;
+}
+#btn14{
+    color: rgb(165, 161, 161);
+    background-color: rgb(218, 218, 218);
+    padding:10px;
+    border: 1px solid rgb(54, 54, 54);
+    border-radius:0.3em
+}
+#btn15{
+    color: rgb(29, 28, 28);
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+    border: none;
+    border-radius:0.3em
+}
+#searchimg{
+    height: 15px;
+    width: 15px;
+}
+.containerse{
+    display: flex;
+}
+form{
+    background-color: white;
+    height: 40px;
+    width:100px;
+    display:flex;
+}
+form input{
+    border: 1px solid rgb(141, 140, 140);
+    padding: 10px;
+}
+form button{
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(141, 140, 140);
+    border-radius: 0 25px 25px 0;
+}
+#button1{
+    border: 1px solid rgb(141,140,140);
+    border-radius: 25px 0 0 25px;
+}
+
