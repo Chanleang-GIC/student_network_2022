@@ -1,0 +1,134 @@
+
+.container{
+    display: flex;
+    flex-direction:column;
+    border: 1px solid black;
+    height: 1000px;
+    width: 890px;
+    padding: 10px;
+}
+.firsthalf{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+    height: 1000px;
+    width: 1000px;
+}
+.block{
+    display: flex;
+    width: 100px;
+    height:100px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper1{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: start;
+    background-color: yellow;
+    width: 400px;
+    height:400px;
+    padding: 10px;
+}
+.wrapper2{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    background-color: yellow;
+    width: 400px;
+    height:400px;
+    padding: 10px;
+}
+.wrapper3{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    width: 400px;
+    height:400px;
+    padding: 10px;
+}
+.wrapper4{
+    display: flex;
+    flex-direction:column;
+    align-items: end;
+    justify-content: center;
+    background-color: yellow;
+    width: 400px;
+    height:400px;
+    padding: 10px;
+}
+.container2{
+    display: flex;
+    flex-direction:column;
+    border: 1px solid black;
+    height: 1000px;
+    width: 890px;
+    padding: 10px;
+}
+.firsthalf2{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+    height: 1000px;
+    width: 1000px;
+}
+.block2-1{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color: aqua;
+    left:10px;
+    top:10px;
+}
+.block2-2{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color: aqua;
+    bottom: 10px;
+    left:10px;
+}
+.block2-3{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color: aqua;
+    left: 150px;
+    bottom:150px;
+}
+.block2-4{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color: aqua;
+    top:150px;
+    right: 10px;
+}
+.wrapper12{
+    position: relative;
+    background-color: yellow;
+    width: 417px;
+    height:400px;
+}
+.wrapper22{
+    position: relative;
+    background-color: yellow;
+    width: 417px;
+    height:400px;
+}
+.wrapper32{
+    position: relative;
+    background-color: yellow;
+    width: 417px;
+    height:400px;
+}
+.wrapper42{
+    position: relative;
+    background-color: yellow;
+    width: 417px;
+    height:400px;
+}
