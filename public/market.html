@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    #body{
+        background-color: #DFDFDF;
+        height:90.8vh;
+    }
+    .bc{
+        height:5vh;
+        background-color: #4B95BE;
+    }
+    #icons4post{
+        background-color: #DFDFDF;
+        font-size:14px;
+    }
+    #icons4post:hover{
+        background-color: white;
+        border:solid 1px #4B95BE;
+    }
+    #notch{
+        background-color:#DFDFDF;
+        height: 4vh;
+    }
+    #header{
+        height: 5.2vh;
+    }
+    #icons{
+        font-size:14px;
+    }
+    #btns{
+        height: 5.2vh;
+    }
+    #white{
+        background-color: white;
+    }
+    #textsm{
+        font-size:10px;
+    }
+    #textmid{
+        font-size:14px;
+    }
+    #status{
+        font-size:14px;
+    }
+    #line{
+        border-top: 1px solid #DFDFDF;
+    }
+    #rounded{
+        border-radius: 18px;
+    }
+    #sidebar{
+        height:100vh;
+    }
+    #sidebarToggleon:hover{
+        background-color: #4B95BE;
+    }
+    #icons:hover{
+        background-color: #4B95BE;
+        color:white;
+    }
+    #icons:focus{
+        background-color: #4B95BE;
+        color:white;
+    }
+</style>
+<body>
+    <div id="notch" class="flex w-full justify-between items-center">
+        <div class="flex h-[20px] text-sm justify-center items-center p-3">9:30</div>
+        <div class="flex h-fit gap-1 pr-3">        
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12H7V21H3V12ZM17 8H21V21H17V8ZM10 2H14V21H10V2Z"></path></svg>
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0.689453 6.99659C3.78027 4.49704 7.71526 3 11.9999 3C16.2845 3 20.2195 4.49704 23.3104 6.99659L21.4253 9.33049C18.8496 7.24753 15.5704 6 11.9999 6C8.42937 6 5.15021 7.24753 2.57453 9.33049L0.689453 6.99659ZM3.83124 10.8864C6.0635 9.08119 8.90544 8 11.9999 8C15.0944 8 17.9363 9.08119 20.1686 10.8864L18.2835 13.2203C16.5664 11.8317 14.3803 11 11.9999 11C9.61954 11 7.43344 11.8317 5.71632 13.2203L3.83124 10.8864ZM6.97304 14.7763C8.34673 13.6653 10.0956 13 11.9999 13C13.9042 13 15.6531 13.6653 17.0268 14.7763L15.1417 17.1102C14.2831 16.4158 13.1901 16 11.9999 16C10.8097 16 9.71667 16.4158 8.85811 17.1102L6.97304 14.7763ZM10.1148 18.6661C10.63 18.2495 11.2858 18 11.9999 18C12.714 18 13.3698 18.2495 13.885 18.6661L11.9999 21L10.1148 18.6661Z"></path></svg>
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5H19C19.5523 5 20 5.44772 20 6V18C20 18.5523 19.5523 19 19 19H3C2.44772 19 2 18.5523 2 18V6C2 5.44772 2.44772 5 3 5ZM21 9H23V15H21V9Z"></path></svg>
+        </div>
+    </div>
+    <div id="header" class="flex w-full justify-between items-center bg-white px-3">
+        <div class="flex h-full w-fit items-center gap-2">
+            <svg id="sidebarToggleon" class="w-5 h-5 h-fit hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 4H21V6H8V4ZM3 3.5H6V6.5H3V3.5ZM3 10.5H6V13.5H3V10.5ZM3 17.5H6V20.5H3V17.5ZM8 11H21V13H8V11ZM8 18H21V20H8V18Z"></path></svg>
+            <p class="text-xl h-fit">GIC</p>
+        </div>
+        <div class="h-fit">Market</div>
+        <div class="flex h-full w-fit items-center gap-2 h-fit">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
+            <img class="w-5 h-5 rounded-full" src="/assets/images/149071.png" alt="">
+        </div>
+    </div>
+    <div id="body" class="flex flex-col w-full overflow-y-auto">
+        <div id="body" class="flex flex-col w-full">
+            <div class="bg-white flex items-center justify-between h-fit rounded-full mt-2 mx-2 px-2 py-3">
+                <div class="flex h-full items-center gap-2">
+                    <img class="w-7 h-7 rounded-full" src="/assets/images/149071.png" alt="">
+                    <input id="status" type="text" class="bg-white h-full w-full text-black text-md focus:outline-none focus:border-white" placeholder="Have anything to sell?">
+                </div>
+                <div class="flex">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.8287 7.7574L9.1718 13.4143C8.78127 13.8048 8.78127 14.4379 9.1718 14.8285C9.56232 15.219 10.1955 15.219 10.586 14.8285L16.2429 9.17161C17.4144 8.00004 17.4144 6.10055 16.2429 4.92897C15.0713 3.7574 13.1718 3.7574 12.0002 4.92897L6.34337 10.5858C4.39075 12.5384 4.39075 15.7043 6.34337 17.6569C8.29599 19.6095 11.4618 19.6095 13.4144 17.6569L19.0713 12L20.4855 13.4143L14.8287 19.0711C12.095 21.8048 7.66283 21.8048 4.92916 19.0711C2.19549 16.3374 2.19549 11.9053 4.92916 9.17161L10.586 3.51476C12.5386 1.56214 15.7045 1.56214 17.6571 3.51476C19.6097 5.46738 19.6097 8.63321 17.6571 10.5858L12.0002 16.2427C10.8287 17.4143 8.92916 17.4143 7.75759 16.2427C6.58601 15.0711 6.58601 13.1716 7.75759 12L13.4144 6.34319L14.8287 7.7574Z"></path></svg>
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 1V5H4V19H20V3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H6V1H8ZM12 8L16 12H13V16H11V12H8L12 8ZM18 1V5H10V3H16V1H18Z"></path></svg>
+                </div>
+            </div>
+            <div id="btns" class="flex justify-between w-full p-2 px-4 gap-5">
+                <button id="icons" class="w-full h-7 bg-white rounded-full">All</button>
+                <button id="icons" class="w-full h-7 bg-white rounded-full">Trending</button>
+                <button id="icons" class="w-full h-7 bg-white rounded-full">Gifts</button>
+                <button id="icons" class="w-full h-7 bg-white rounded-full">Your Cart</button>
+            </div>
+            <div id="btns" class="flex w-fit p-1 px-2 gap-2 items-center hover:bg-white ml-2 rounded-lg">
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.17071 18C6.58254 16.8348 7.69378 16 9 16C10.3062 16 11.4175 16.8348 11.8293 18H22V20H11.8293C11.4175 21.1652 10.3062 22 9 22C7.69378 22 6.58254 21.1652 6.17071 20H2V18H6.17071ZM12.1707 11C12.5825 9.83481 13.6938 9 15 9C16.3062 9 17.4175 9.83481 17.8293 11H22V13H17.8293C17.4175 14.1652 16.3062 15 15 15C13.6938 15 12.5825 14.1652 12.1707 13H2V11H12.1707ZM6.17071 4C6.58254 2.83481 7.69378 2 9 2C10.3062 2 11.4175 2.83481 11.8293 4H22V6H11.8293C11.4175 7.16519 10.3062 8 9 8C7.69378 8 6.58254 7.16519 6.17071 6H2V4H6.17071Z" fill="rgba(105,105,105,1)"></path></svg>
+                <p id="textlg">Filter</p>
+            </div>
+            <div id="rounded" class="bg-white flex flex-col m-1 h-fit w-fit p-3 gap-3">
+                <div class="flex justify-between w-full">
+                    <div class="flex text-sm">
+                        <table class="leading-none">                        
+                            <tr>
+                                <td rowspan="2">
+                                    <img class="w-7 h-7 rounded-full" src="/assets/images/149071.png" alt="">      
+                                </td>
+                                <td id="textmid">Chanleang Heang</td>
+                            </tr>
+                            <tr>
+                                <td id="textsm" class="flex gap-2 px-1">
+                                    <p>32m</p>
+                                    <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM16.0043 12.8777C15.6589 12.3533 15.4097 11.9746 14.4622 12.1248C12.6717 12.409 12.4732 12.7224 12.3877 13.2375L12.3636 13.3943L12.3393 13.5597C12.2416 14.2428 12.2453 14.5012 12.5589 14.8308C13.8241 16.1582 14.582 17.115 14.8116 17.6746C14.9237 17.9484 15.2119 18.7751 15.0136 19.5927C16.2372 19.1066 17.3156 18.3332 18.1653 17.3559C18.2755 16.9821 18.3551 16.5166 18.3551 15.9518V15.8472C18.3551 14.9247 18.3551 14.504 17.7031 14.1314C17.428 13.9751 17.2227 13.881 17.0582 13.8064C16.691 13.6394 16.4479 13.5297 16.1198 13.0499C16.0807 12.9928 16.0425 12.9358 16.0043 12.8777ZM12 3.83333C9.68259 3.83333 7.59062 4.79858 6.1042 6.34896C6.28116 6.47186 6.43537 6.64453 6.54129 6.88256C6.74529 7.34029 6.74529 7.8112 6.74529 8.22764C6.74488 8.55621 6.74442 8.8672 6.84992 9.09302C6.99443 9.40134 7.6164 9.53227 8.16548 9.64736C8.36166 9.68867 8.56395 9.73083 8.74797 9.78176C9.25405 9.92233 9.64554 10.3765 9.95938 10.7412C10.0896 10.8931 10.2819 11.1163 10.3783 11.1717C10.4286 11.1356 10.59 10.9608 10.6699 10.6735C10.7307 10.4547 10.7134 10.2597 10.6239 10.1543C10.0648 9.49445 10.0952 8.2232 10.268 7.75495C10.5402 7.01606 11.3905 7.07058 12.012 7.11097C12.2438 7.12589 12.4626 7.14023 12.6257 7.11976C13.2482 7.04166 13.4396 6.09538 13.575 5.91C13.8671 5.50981 14.7607 4.9071 15.3158 4.53454C14.3025 4.08382 13.1805 3.83333 12 3.83333Z" fill="rgba(105,105,105,1)"></path></svg>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex items-center justify-between w-45 gap-1">
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">Favorite</button>
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">$2000</button>
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">Buy</button>
+                    </div>
+                </div>
+                <div class="flex items-center">This is really nice.</div>
+                <img class="w-fit h-fit" src="/assets/images/nature.jpg" alt="">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p id="textsm">168</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <p id="textsm">70 comments</p>
+                        <p id="textsm">2 shares</p>
+                    </div>
+                </div>
+                <div id="line"></div>
+                <div class="flex justify-between px-4">
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Like</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.45455 19L2 22.5V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V18C22 18.5523 21.5523 19 21 19H6.45455Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Comment</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Share</p>
+                    </div>
+                </div>
+            </div>
+            <div id="rounded" class="bg-white flex flex-col m-1 h-fit w-fit p-3 gap-3">
+                <div class="flex justify-between w-full">
+                    <div class="flex text-sm">
+                        <table class="leading-none">                        
+                            <tr>
+                                <td rowspan="2">
+                                    <img class="w-7 h-7 rounded-full" src="/assets/images/149071.png" alt="">      
+                                </td>
+                                <td id="textmid">Chanleang Heang</td>
+                            </tr>
+                            <tr>
+                                <td id="textsm" class="flex gap-2 px-1">
+                                    <p>32m</p>
+                                    <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM16.0043 12.8777C15.6589 12.3533 15.4097 11.9746 14.4622 12.1248C12.6717 12.409 12.4732 12.7224 12.3877 13.2375L12.3636 13.3943L12.3393 13.5597C12.2416 14.2428 12.2453 14.5012 12.5589 14.8308C13.8241 16.1582 14.582 17.115 14.8116 17.6746C14.9237 17.9484 15.2119 18.7751 15.0136 19.5927C16.2372 19.1066 17.3156 18.3332 18.1653 17.3559C18.2755 16.9821 18.3551 16.5166 18.3551 15.9518V15.8472C18.3551 14.9247 18.3551 14.504 17.7031 14.1314C17.428 13.9751 17.2227 13.881 17.0582 13.8064C16.691 13.6394 16.4479 13.5297 16.1198 13.0499C16.0807 12.9928 16.0425 12.9358 16.0043 12.8777ZM12 3.83333C9.68259 3.83333 7.59062 4.79858 6.1042 6.34896C6.28116 6.47186 6.43537 6.64453 6.54129 6.88256C6.74529 7.34029 6.74529 7.8112 6.74529 8.22764C6.74488 8.55621 6.74442 8.8672 6.84992 9.09302C6.99443 9.40134 7.6164 9.53227 8.16548 9.64736C8.36166 9.68867 8.56395 9.73083 8.74797 9.78176C9.25405 9.92233 9.64554 10.3765 9.95938 10.7412C10.0896 10.8931 10.2819 11.1163 10.3783 11.1717C10.4286 11.1356 10.59 10.9608 10.6699 10.6735C10.7307 10.4547 10.7134 10.2597 10.6239 10.1543C10.0648 9.49445 10.0952 8.2232 10.268 7.75495C10.5402 7.01606 11.3905 7.07058 12.012 7.11097C12.2438 7.12589 12.4626 7.14023 12.6257 7.11976C13.2482 7.04166 13.4396 6.09538 13.575 5.91C13.8671 5.50981 14.7607 4.9071 15.3158 4.53454C14.3025 4.08382 13.1805 3.83333 12 3.83333Z" fill="rgba(105,105,105,1)"></path></svg>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex items-center justify-between w-45 gap-1">
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">Favorite</button>
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">$2000</button>
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">Buy</button>
+                    </div>
+                </div>
+                <div class="flex items-center">This is really nice.</div>
+                <img class="w-fit h-fit" src="/assets/images/nature.jpg" alt="">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p id="textsm">168</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <p id="textsm">70 comments</p>
+                        <p id="textsm">2 shares</p>
+                    </div>
+                </div>
+                <div id="line"></div>
+                <div class="flex justify-between px-4">
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Like</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.45455 19L2 22.5V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V18C22 18.5523 21.5523 19 21 19H6.45455Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Comment</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Share</p>
+                    </div>
+                </div>
+            </div>
+            <div id="rounded" class="bg-white flex flex-col m-1 h-fit w-fit p-3 gap-3">
+                <div class="flex justify-between w-full">
+                    <div class="flex text-sm">
+                        <table class="leading-none">                        
+                            <tr>
+                                <td rowspan="2">
+                                    <img class="w-7 h-7 rounded-full" src="/assets/images/149071.png" alt="">      
+                                </td>
+                                <td id="textmid">Chanleang Heang</td>
+                            </tr>
+                            <tr>
+                                <td id="textsm" class="flex gap-2 px-1">
+                                    <p>32m</p>
+                                    <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM16.0043 12.8777C15.6589 12.3533 15.4097 11.9746 14.4622 12.1248C12.6717 12.409 12.4732 12.7224 12.3877 13.2375L12.3636 13.3943L12.3393 13.5597C12.2416 14.2428 12.2453 14.5012 12.5589 14.8308C13.8241 16.1582 14.582 17.115 14.8116 17.6746C14.9237 17.9484 15.2119 18.7751 15.0136 19.5927C16.2372 19.1066 17.3156 18.3332 18.1653 17.3559C18.2755 16.9821 18.3551 16.5166 18.3551 15.9518V15.8472C18.3551 14.9247 18.3551 14.504 17.7031 14.1314C17.428 13.9751 17.2227 13.881 17.0582 13.8064C16.691 13.6394 16.4479 13.5297 16.1198 13.0499C16.0807 12.9928 16.0425 12.9358 16.0043 12.8777ZM12 3.83333C9.68259 3.83333 7.59062 4.79858 6.1042 6.34896C6.28116 6.47186 6.43537 6.64453 6.54129 6.88256C6.74529 7.34029 6.74529 7.8112 6.74529 8.22764C6.74488 8.55621 6.74442 8.8672 6.84992 9.09302C6.99443 9.40134 7.6164 9.53227 8.16548 9.64736C8.36166 9.68867 8.56395 9.73083 8.74797 9.78176C9.25405 9.92233 9.64554 10.3765 9.95938 10.7412C10.0896 10.8931 10.2819 11.1163 10.3783 11.1717C10.4286 11.1356 10.59 10.9608 10.6699 10.6735C10.7307 10.4547 10.7134 10.2597 10.6239 10.1543C10.0648 9.49445 10.0952 8.2232 10.268 7.75495C10.5402 7.01606 11.3905 7.07058 12.012 7.11097C12.2438 7.12589 12.4626 7.14023 12.6257 7.11976C13.2482 7.04166 13.4396 6.09538 13.575 5.91C13.8671 5.50981 14.7607 4.9071 15.3158 4.53454C14.3025 4.08382 13.1805 3.83333 12 3.83333Z" fill="rgba(105,105,105,1)"></path></svg>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex items-center justify-between w-45 gap-1">
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">Favorite</button>
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">$2000</button>
+                        <button id="icons4post" class="w-fit h-7 rounded-full px-2">Buy</button>
+                    </div>
+                </div>
+                <div class="flex items-center">This is really nice.</div>
+                <img class="w-fit h-fit" src="/assets/images/nature.jpg" alt="">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p id="textsm">168</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <p id="textsm">70 comments</p>
+                        <p id="textsm">2 shares</p>
+                    </div>
+                </div>
+                <div id="line"></div>
+                <div class="flex justify-between px-4">
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Like</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.45455 19L2 22.5V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V18C22 18.5523 21.5523 19 21 19H6.45455Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Comment</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z" fill="rgba(75,149,190,1)"></path></svg>
+                        <p class="textmid">Share</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sidebar" class="w-0 bg-white fixed top-10 left-0 transition-all duration-300 ease-in-out overflow-y-auto">
+        <!-- Sidebar content here -->
+        <div class="flex flex-col px-6 gap-14">
+            <div class="flex">GIC</div>
+            <div onclick ="Home()" class="flex rounded-full items-center px-6 gap-3">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 20.0001C20 20.5524 19.5523 21.0001 19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001L1 11.0001L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001L20 11.0001V20.0001ZM11 13.0001V19.0001H13V13.0001H11Z" fill="rgba(105,105,105,1)"></path></svg>
+                <p>Home</p>
+            </div>
+            <div onclick ="Inbox()" class="flex rounded-full items-center px-6 gap-3">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12H20V5H4V12H9Z" fill="rgba(105,105,105,1)"></path></svg>
+                <p>Inbox</p>
+            </div>
+            <div id="sidebarToggleoff" class="bc flex rounded-full items-center px-6 gap-3 text-white">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V13H2V11L3 6H21L22 11V13H21ZM5 13V19H19V13H5ZM4.03961 11H19.9604L19.3604 8H4.63961L4.03961 11ZM6 14H14V17H6V14ZM3 3H21V5H3V3Z" fill="rgba(255,255,255,1)"></path></svg>
+                <p>Market</p>
+            </div>
+            <div onclick ="Friends()" class="flex rounded-full items-center px-6 gap-3">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 19.748V16.4C10 15.1174 10.9948 14.1076 12.4667 13.5321C11.5431 13.188 10.5435 13 9.5 13C7.61013 13 5.86432 13.6168 4.45286 14.66C5.33199 17.1544 7.41273 19.082 10 19.748ZM18.8794 16.0859C18.4862 15.5526 17.1708 15 15.5 15C13.4939 15 12 15.7967 12 16.4V20C14.9255 20 17.4843 18.4296 18.8794 16.0859ZM9.55 11.5C10.7926 11.5 11.8 10.4926 11.8 9.25C11.8 8.00736 10.7926 7 9.55 7C8.30736 7 7.3 8.00736 7.3 9.25C7.3 10.4926 8.30736 11.5 9.55 11.5ZM15.5 12.5C16.6046 12.5 17.5 11.6046 17.5 10.5C17.5 9.39543 16.6046 8.5 15.5 8.5C14.3954 8.5 13.5 9.39543 13.5 10.5C13.5 11.6046 14.3954 12.5 15.5 12.5ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z" fill="rgba(105,105,105,1)"></path></svg>
+                <p>Friends</p>
+            </div>
+            <div onclick ="Notifications()" class="flex rounded-full items-center px-6 gap-3">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 17H22V19H2V17H4V10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10V17ZM9 21H15V23H9V21Z" fill="rgba(105,105,105,1)"></path></svg>
+                <p>Notifications</p>
+            </div>
+            <div onclick ="setting()" class="flex rounded-full items-center px-6 gap-3">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.13225 13.6308C1.95018 12.5349 1.95619 11.434 2.13313 10.3695C3.23434 10.3963 4.22471 9.86798 4.60963 8.93871C4.99454 8.00944 4.66782 6.93557 3.87024 6.17581C4.49783 5.29798 5.27202 4.51528 6.17568 3.86911C6.93548 4.66716 8.00968 4.99416 8.9392 4.60914C9.86872 4.22412 10.3971 3.23332 10.37 2.13176C11.4659 1.94969 12.5668 1.9557 13.6313 2.13265C13.6045 3.23385 14.1329 4.22422 15.0621 4.60914C15.9914 4.99406 17.0653 4.66733 17.825 3.86975C18.7029 4.49734 19.4856 5.27153 20.1317 6.1752C19.3337 6.93499 19.0067 8.00919 19.3917 8.93871C19.7767 9.86823 20.7675 10.3966 21.8691 10.3695C22.0511 11.4654 22.0451 12.5663 21.8682 13.6308C20.767 13.6041 19.7766 14.1324 19.3917 15.0616C19.0068 15.9909 19.3335 17.0648 20.1311 17.8245C19.5035 18.7024 18.7293 19.4851 17.8256 20.1312C17.0658 19.3332 15.9916 19.0062 15.0621 19.3912C14.1326 19.7762 13.6043 20.767 13.6313 21.8686C12.5354 22.0507 11.4345 22.0447 10.37 21.8677C10.3968 20.7665 9.86847 19.7761 8.9392 19.3912C8.00993 19.0063 6.93605 19.333 6.1763 20.1306C5.29847 19.503 4.51577 18.7288 3.8696 17.8252C4.66765 17.0654 4.99465 15.9912 4.60963 15.0616C4.22461 14.1321 3.23381 13.6038 2.13225 13.6308ZM12.0007 15.0002C13.6575 15.0002 15.0007 13.657 15.0007 12.0002C15.0007 10.3433 13.6575 9.00018 12.0007 9.00018C10.3438 9.00018 9.00066 10.3433 9.00066 12.0002C9.00066 13.657 10.3438 15.0002 12.0007 15.0002Z" fill="rgba(105,105,105,1)"></path></svg>
+                <p>Settings</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function Home()
+    {
+        window.location.href = 'homepage.html';
+        return false;
+    }
+    function Inbox()
+    {
+        window.location.href = 'inbox.html';
+        return false;
+    }
+    function Friends()
+    {
+        window.location.href = 'friends.html';
+        return false;
+    }
+    function Notifications()
+    {
+        window.location.href = 'notifications.html';
+        return false;
+    }
+    function setting()
+    {
+        window.location.href = 'setting.html';
+        return false;
+    }
+    const sidebarToggleon = document.getElementById('sidebarToggleon');
+    const sidebarToggleoff = document.getElementById('sidebarToggleoff');
+    const sidebar = document.getElementById('sidebar');
+    sidebar.style.width = '0px';
+
+    sidebarToggleon.addEventListener('click', () => {
+    if (sidebar.style.width === '0px') {
+        sidebar.style.width = '360px';
+    } else {
+        sidebar.style.width = '0px';
+    }
+    });
+    sidebarToggleoff.addEventListener('click', () => {
+    if (sidebar.style.width === '360px') {
+        sidebar.style.width = '0px';
+    }
+    });
+</script>
+</html>
