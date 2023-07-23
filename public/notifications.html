@@ -46,9 +46,6 @@
     #line{
         border-top: 1px solid black;
     }
-    #rounded{
-        border-radius: 18px;
-    }
     #sidebar{
         height:100vh;
     }
@@ -63,33 +60,9 @@
         background-color: #4B95BE;
         color:white;
     }
-    #requests{
+    #Notifications{
         height:78vh;
         background-color: white;
-    }
-    #confirm{
-        background-color:#4B95BE;
-    }
-    #confirm:hover{
-        background-color: white;
-        border:solid 1px black;
-        color:black;
-    }
-    #deny{
-        background-color:#C88494;
-    }
-    #deny:hover{
-        background-color: white;
-        border:solid 1px black;
-        color:black;
-    }
-    #hide{
-        background-color: #DFDFDF;
-    }
-    #hide:hover{
-        background-color: white;
-        border:solid 1px black;
-        color:black;
     }
 </style>
 <body>
@@ -106,7 +79,7 @@
             <svg id="sidebarToggleon" class="w-5 h-5 hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 4H21V6H8V4ZM3 3.5H6V6.5H3V3.5ZM3 10.5H6V13.5H3V10.5ZM3 17.5H6V20.5H3V17.5ZM8 11H21V13H8V11ZM8 18H21V20H8V18Z"></path></svg>
             <p class="text-xl h-fit">GIC</p>
         </div>
-        <div class="h-fit">Friends</div>
+        <div class="h-fit">Notifications</div>
         <div class="flex h-full w-fit items-center gap-2">
             <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
             <img class="w-5 h-5 rounded-full" src="/assets/images/149071.png" alt="">
@@ -116,56 +89,39 @@
         <div id="body" class="flex flex-col w-full">
             <div id="btns" class="flex justify-between w-full p-2 px-4 gap-5 mt-2">
                 <button id="icons" class="w-1/3 h-7 bg-white rounded-full">All</button>
-                <button id="icons" class="w-1/3 h-7 bg-white rounded-full">Friends</button>
-                <button id="icons" class="w-1/3 h-7 bg-white rounded-full">Requests</button>
-                <button id="icons" class="w-1/2 h-7 bg-white rounded-full text-sm">Suggestions</button>
+                <button id="icons" class="w-1/3 h-7 bg-white rounded-full">Clubs</button>
+                <button id="icons" class="w-1/3 h-7 bg-white rounded-full">Shop</button>
+                <button id="icons" class="w-1/2 h-7 bg-white rounded-full text-sm">Other</button>
             </div>
             <div id="btns" class="flex w-fit p-1 px-2 gap-2 items-center hover:bg-white ml-2 rounded-lg">
                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.17071 18C6.58254 16.8348 7.69378 16 9 16C10.3062 16 11.4175 16.8348 11.8293 18H22V20H11.8293C11.4175 21.1652 10.3062 22 9 22C7.69378 22 6.58254 21.1652 6.17071 20H2V18H6.17071ZM12.1707 11C12.5825 9.83481 13.6938 9 15 9C16.3062 9 17.4175 9.83481 17.8293 11H22V13H17.8293C17.4175 14.1652 16.3062 15 15 15C13.6938 15 12.5825 14.1652 12.1707 13H2V11H12.1707ZM6.17071 4C6.58254 2.83481 7.69378 2 9 2C10.3062 2 11.4175 2.83481 11.8293 4H22V6H11.8293C11.4175 7.16519 10.3062 8 9 8C7.69378 8 6.58254 7.16519 6.17071 6H2V4H6.17071Z" fill="rgba(105,105,105,1)"></path></svg>
                 <p id="textlg">Filter</p>
             </div>
-            <div id="requests" class="flex w-full flex-col gap-4">
+            <div id="Notifications" class="flex w-full flex-col gap-4">
                 <div id="line"></div>
-                <p id="textmid" class="ml-3">Requests</p>
-                <div id="bodyforrequest" class="flex w-full flex-col gap-4 overflow-y-auto">
+                <p id="textmid" class="ml-3">Notifications</p>
+                <div id="bodyfornoti" class="flex w-full flex-col gap-4 overflow-y-auto">
                     <div id="repeatSection" class="flex w-full px-4">
                         <div class="flex text-sm w-full pr-2">
-                            <table class="leading-normal w-full">                        
+                            <table class="leading-none w-full">                        
                                 <tr>
                                     <td rowspan="2" class="w-1/6">
-                                        <img class="w-16 h-16 rounded-full" src="/assets/images/149071.png" alt=""> 
+                                        <img class="w-14 h-14 rounded-full" src="/assets/images/149071.png" alt=""> 
                                     </td>
                                     <td id="textlg" class="w-3/4">Chanleang Heang</td>
                                 </tr>
                                 <tr>
-                                    <td class="flex justify-between w-full gap-2">
-                                        <button id="confirm" class="w-1/2 rounded-full text-white py-1">Confirm</button>
-                                        <button id="deny" class="w-1/2 rounded-full text-white py-1">Deny</button>
-                                        <button id="hide" class="w-1/3 rounded-full py-1">Hide</button>
+                                    <td>
+                                        <p>Just bought the book.</p>
                                     </td>
                                 </tr>
                             </table>
                         </div> 
+                        <div class="flex items-center w-fit">
+                            <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(105,105,105,1)"></path></svg>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z" fill="rgba(105,105,105,1)"></path></svg>
+                        </div>
                     </div>
-                    <div class="flex w-full pt-2 px-4">
-                        <div class="flex text-sm w-full pr-2">
-                            <table class="leading-normal w-full">                        
-                                <tr>
-                                    <td rowspan="2" class="w-1/6">
-                                        <img class="w-16 h-16 rounded-full" src="/assets/images/149071.png" alt=""> 
-                                    </td>
-                                    <td id="textlg" class="w-3/4">Chanleang Heang</td>
-                                </tr>
-                                <tr>
-                                    <td class="flex justify-between w-full gap-2">
-                                        <button id="confirm" class="w-1/2 rounded-full text-white py-1">Confirm</button>
-                                        <button id="deny" class="w-1/2 rounded-full text-white py-1">Deny</button>
-                                        <button id="hide" class="w-1/3 rounded-full py-1">Hide</button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> 
-                    </div>   
                 </div>       
             </div>
         </div>
@@ -186,12 +142,12 @@
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V13H2V11L3 6H21L22 11V13H21ZM5 13V19H19V13H5ZM4.03961 11H19.9604L19.3604 8H4.63961L4.03961 11ZM6 14H14V17H6V14ZM3 3H21V5H3V3Z" fill="rgba(105,105,105,1)"></path></svg>
                 <p>Market</p>
             </button>
-            <button id="sidebarToggleoff" class="bc flex rounded-full items-center px-6 gap-3 text-white">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 19.748V16.4C10 15.1174 10.9948 14.1076 12.4667 13.5321C11.5431 13.188 10.5435 13 9.5 13C7.61013 13 5.86432 13.6168 4.45286 14.66C5.33199 17.1544 7.41273 19.082 10 19.748ZM18.8794 16.0859C18.4862 15.5526 17.1708 15 15.5 15C13.4939 15 12 15.7967 12 16.4V20C14.9255 20 17.4843 18.4296 18.8794 16.0859ZM9.55 11.5C10.7926 11.5 11.8 10.4926 11.8 9.25C11.8 8.00736 10.7926 7 9.55 7C8.30736 7 7.3 8.00736 7.3 9.25C7.3 10.4926 8.30736 11.5 9.55 11.5ZM15.5 12.5C16.6046 12.5 17.5 11.6046 17.5 10.5C17.5 9.39543 16.6046 8.5 15.5 8.5C14.3954 8.5 13.5 9.39543 13.5 10.5C13.5 11.6046 14.3954 12.5 15.5 12.5ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z" fill="rgba(255,255,255,1)"></path></svg>
+            <button onclick ="Friends()" class="flex rounded-full items-center px-6 gap-3">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 19.748V16.4C10 15.1174 10.9948 14.1076 12.4667 13.5321C11.5431 13.188 10.5435 13 9.5 13C7.61013 13 5.86432 13.6168 4.45286 14.66C5.33199 17.1544 7.41273 19.082 10 19.748ZM18.8794 16.0859C18.4862 15.5526 17.1708 15 15.5 15C13.4939 15 12 15.7967 12 16.4V20C14.9255 20 17.4843 18.4296 18.8794 16.0859ZM9.55 11.5C10.7926 11.5 11.8 10.4926 11.8 9.25C11.8 8.00736 10.7926 7 9.55 7C8.30736 7 7.3 8.00736 7.3 9.25C7.3 10.4926 8.30736 11.5 9.55 11.5ZM15.5 12.5C16.6046 12.5 17.5 11.6046 17.5 10.5C17.5 9.39543 16.6046 8.5 15.5 8.5C14.3954 8.5 13.5 9.39543 13.5 10.5C13.5 11.6046 14.3954 12.5 15.5 12.5ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z" fill="rgba(105,105,105,1)"></path></svg>
                 <p>Friends</p>
             </button>
-            <button onclick ="Notifications()" class="flex rounded-full items-center px-6 gap-3">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 17H22V19H2V17H4V10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10V17ZM9 21H15V23H9V21Z" fill="rgba(105,105,105,1)"></path></svg>
+            <button id="sidebarToggleoff" class="bc flex rounded-full items-center px-6 gap-3 text-white">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 17H22V19H2V17H4V10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10V17ZM9 21H15V23H9V21Z" fill="rgba(255,255,255,1)"></path></svg>
                 <p>Notifications</p>
             </button>
             <button onclick ="setting()" class="flex rounded-full items-center px-6 gap-3">
@@ -217,9 +173,9 @@
         window.location.href = 'market.html';
         return false;
     }
-    function Notifications()
+    function Friends()
     {
-        window.location.href = 'notifications.html';
+        window.location.href = 'friends.html';
         return false;
     }
     function setting()
@@ -245,7 +201,7 @@
     }
     });
         // Get the container element
-        const container = document.getElementById("bodyforrequest");
+        const container = document.getElementById("bodyfornoti");
 
         // Number of times to repeat the elements
         const repeatCount = 12; // Change this number to repeat more or fewer times
