@@ -62,6 +62,10 @@
         color:white;
         fill:white;
     }
+    #bgimage{
+        background-image: url('/assets/images/24701c5a2c096ee0d1d32d6e31ad45fa.jpg');
+        /* background-color: #4B95BE; */
+    }
 </style>
 <body>
     <div id="notch" class="flex w-full justify-between items-center">
@@ -84,18 +88,17 @@
         </div>
     </div>
 <div id="body" class="flex flex-col justify-start w-full bg-white overflow-y-auto">
-    <div id="coverphoto" class="flex relative justify-center items-end w-full h-1/4 bg-gray-200">
-        <img class="w-fit h-full" src="/assets/images/nature.jpg" alt="">
-        <img class="w-20 h-20 absolute top-[140px]" src="/assets/images/149071.png" alt="">
-    </div>
-    <div id="mid" class="flex w-full h-1/4 justify-end items-end pt-10">
-        <div class="flex flex-col w-full h-full justify-between">
+    <div id="mid" class="flex w-full h-1/3 justify-end items-end">
+        <div id="bgimage" class="flex flex-col w-full h-full justify-between">
+            <div class="flex w-full justify-center items-center pt-4">
+                <img class="w-20 h-20" src="/assets/images/149071.png" alt="">
+            </div>
             <div class="flex w-full justify-between px-5">
                 <button id="profileeditor" class="flex w-fit justify-center items-center bg-white p-3 px-4">Edit Profile</button>
-                <p>@chanleang</p>
+                <p class="text-white font-bold">@chanleang</p>
                 <button id="profileeditor" class="flex w-fit justify-center items-center bg-white p-3 px-4">Share Profile</button>
             </div>
-            <div class="flex w-full h-2/5 bg-white justify-between border-2 border-b-black">
+            <div class="flex w-full h-1/5 bg-white justify-between border-2 border-b-black">
                 <button id="iconsoption" onclick="repeat('bodyforposts', 'rounded')" class="flex justify-center items-center h-full w-full hover:bg-blue-400"><svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"></path></svg></button>
                 <button id="iconsoption" onclick="repeat('bodyforposts', 'rounded')" class="flex justify-center items-center h-full w-full hover:bg-blue-400"><svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.00488 7.99951V5.99951C7.00488 3.23809 9.24346 0.999512 12.0049 0.999512C14.7663 0.999512 17.0049 3.23809 17.0049 5.99951V7.99951H20.0049C20.5572 7.99951 21.0049 8.44723 21.0049 8.99951V20.9995C21.0049 21.5518 20.5572 21.9995 20.0049 21.9995H4.00488C3.4526 21.9995 3.00488 21.5518 3.00488 20.9995V8.99951C3.00488 8.44723 3.4526 7.99951 4.00488 7.99951H7.00488ZM7.00488 9.99951H5.00488V19.9995H19.0049V9.99951H17.0049V11.9995H15.0049V9.99951H9.00488V11.9995H7.00488V9.99951ZM9.00488 7.99951H15.0049V5.99951C15.0049 4.34266 13.6617 2.99951 12.0049 2.99951C10.348 2.99951 9.00488 4.34266 9.00488 5.99951V7.99951Z"></path></svg></button>
                 <button id="iconsoption" onclick="repeat('bodyforposts', 'rounded')" class="flex justify-center items-center h-full w-full hover:bg-blue-400"><svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 19H12V12.9416L8 9.45402L4 12.9416V19H7V15H9V19ZM21 21H3C2.44772 21 2 20.5523 2 20V12.4868C2 12.1978 2.12501 11.9229 2.34282 11.733L6 8.54435V4C6 3.44772 6.44772 3 7 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21ZM16 11V13H18V11H16ZM16 15V17H18V15H16ZM16 7V9H18V7H16ZM12 7V9H14V7H12Z"></path></svg></button>
@@ -298,7 +301,6 @@ function handleTouchEnd(event) {
         }
     }
 }
-
 
 </script>
 </html>
