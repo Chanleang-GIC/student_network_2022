@@ -244,29 +244,42 @@
         }
     // Add the event listeners to the whole document to detect swipe gesture
     document.addEventListener('touchstart', handleTouchStart);
-    document.addEventListener('touchend', handleTouchEnd);
+document.addEventListener('touchend', handleTouchEnd);
 
-    let touchStartX = 0;
+let touchStartX = 0;
+let touchStartY = 0;
 
-    function handleTouchStart(event) {
-        touchStartX = event.touches[0].clientX;
-    }
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+    touchStartY = event.touches[0].clientY;
+}
 
-    function handleTouchEnd(event) {
-        const touchEndX = event.changedTouches[0].clientX;
-        const swipeDistance = touchEndX - touchStartX;
+function handleTouchEnd(event) {
+    const touchEndX = event.changedTouches[0].clientX;
+    const touchEndY = event.changedTouches[0].clientY;
 
-        // Check if the swipe distance is greater than a certain threshold (you can adjust this value as needed)
-        const swipeThreshold = 50;
-        const swipeThresholdoff = 0; // Adjusted to 50 for better swipe detection
-        if (swipeDistance > swipeThreshold) {
-            // Perform the button click action here
-            sidebarToggleon.click();
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+
+    // Adjust these threshold values as needed
+    const horizontalSwipeThreshold = 100;
+    const verticalSwipeThreshold = 100;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        // Horizontal swipe
+        if (deltaX > horizontalSwipeThreshold) {
+            // Right swipe
+            sidebarToggleon.click(); // Perform the button click action here for right swipe
+        } else if (deltaX < -horizontalSwipeThreshold) {
+            // Left swipe
+            // Perform the button click action here for left swipe
+            if (sidebar.style.width === '360px') {
+                sidebar.style.width = '0px';
+            } else {
+                window.location.href = document.referrer;
+            }
         }
-        if (swipeDistance < swipeThresholdoff) {
-            // Perform the button click action here
-            sidebarToggleoff.click();
-        }
     }
+}
 </script>
 </html>
