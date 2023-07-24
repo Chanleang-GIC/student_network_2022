@@ -368,8 +368,8 @@ function handleTouchEnd(event) {
     const deltaY = touchEndY - touchStartY;
 
     // Adjust these threshold values as needed
-    const horizontalSwipeThreshold = 100;
-    const verticalSwipeThreshold = 100;
+    const horizontalSwipeThreshold = 50;
+    const verticalSwipeThreshold = 50;
 
     if (Math.abs(deltaX) > Math.abs(deltaY)) {
         // Horizontal swipe
