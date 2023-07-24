@@ -78,6 +78,11 @@
         color:white;
         fill:white;
     }
+    .repeatSectionClass1:active{
+        background-color:#4B95BE;
+        color:white;
+        fill:white;
+    }
     .repeatSectionClass2:hover{
         background-color:#4B95BE;
         color:white;
@@ -155,8 +160,8 @@
             </div>
         </div>
         <div id="tab0" class=" tab-content flex flex-col w-full overflow-y-auto p-5 gap-8 justify-center items-center text-gray-400">Empty</div>
-        <div id="tab1" class=" tab-content hidden flex flex-col w-full overflow-y-auto  p-5 gap-8">
-            <div class="repeatSectionClass1 flex text-sm rounded-full">
+        <div id="tab1" class=" tab-content hidden flex flex-col w-full overflow-y-auto p-5 gap-8">
+            <div onclick="Chat()" class="repeatSectionClass1 flex text-sm rounded-full">
                 <table class="leading-normal">                        
                     <tr>
                         <td rowspan="2">
@@ -269,6 +274,11 @@
     function setting()
     {
         window.location.href = 'setting.html';
+        return false;
+    }
+    function Chat()
+    {
+        window.location.href = 'chat.html';
         return false;
     }
     const sidebarToggleon = document.getElementById('sidebarToggleon');
